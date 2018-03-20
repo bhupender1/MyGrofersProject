@@ -1,11 +1,19 @@
 package PageObject;
 
+
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class StoreCardCategory {
+	
 	
 	public WebDriver driver;
 	public StoreCardCategory(WebDriver driver) {
@@ -40,4 +48,126 @@ public class StoreCardCategory {
 	WebElement PetCare;
 	@FindBy(xpath="//div[text()='Meats, Frozen & Seafood' and @class='category-slider__category-text']")
 	WebElement MeatsFrozenSeafood;
+	@FindBy(xpath="//div[@title='Next Product' and @class='slider__arrow--nav slider__arrow--right icon-angle-bracket-right slider__arrow--circle']")
+	WebElement slider;
+	
+	public void Category() 
+	{
+		if(FruitsAndVegetable.isDisplayed())
+		{
+			System.out.println("fruits is displayed");
+		}
+		else
+		{
+			System.out.println("Fruits is not displayed");
+		}
+		if(GroceryAndStaple.isDisplayed())
+		{
+			System.out.println("Grocery is displayed");
+		}
+		else
+		{
+			System.out.println("Grocery is not displayed");
+		}
+		if(Beverage.isDisplayed())
+		{
+			System.out.println("Beverage is displayed");
+		}
+		else
+		{
+			System.out.println("Beverage is not displayed");
+		}
+		if(HomeAndKitchen.isDisplayed())
+		{
+			System.out.println("home and kitchen is displayed");
+		}
+		else
+		{
+			System.out.println("Home and Kitchen is not displayed");
+		}
+		if(FurnishingAndHomeNeeds.isDisplayed())
+		{
+			System.out.println("Furnishing and home displayed");
+		}
+		else
+		{
+			System.out.println("Furnishing and home is not displayed");
+		}
+		if(HouseholdNeeds.isDisplayed())
+		{
+			System.out.println("House hold need is displayed");
+		}
+		else
+		{
+			System.out.println("House hold is not displayed");
+		}
+		//slider.click();
+		if(PersonalCare.isDisplayed())
+		{
+			System.out.println("Personel care is displayed");
+		}
+		else
+		{
+			System.out.println("personel care is not displayed");
+		}
+		 
+           WebDriverWait wait=new WebDriverWait(driver, 1000);
+           wait.until(ExpectedConditions.elementToBeClickable(slider));
+
+       
+		
+		
+		if(BreakfastAndDairy.isDisplayed())
+		{
+			System.out.println("break fast and diary is displayed");
+		}
+		else
+		{
+			System.out.println("break fast and diary is not displayed");
+		}
+		if(BiscuitsSnacks.isDisplayed())
+		{
+			System.out.println("Biscuits and snacks is displayed");
+		}
+		else
+		{
+			System.out.println("biscuts and snacks is not displayed");
+		}
+		//Thread.sleep(1000);
+		//slider.click();
+		
+		if(NoodlesAndSauces.isDisplayed())
+		{
+			System.out.println("noodles and snacks is displayed");
+		}
+		else
+		{
+			System.out.println("noodles and snacks is not displayed");
+		}
+		if(BabyAndKids.isDisplayed())
+		{
+			System.out.println("baby and kids is displayed");
+		}
+		else
+		{
+			System.out.println("baby and kids is not displayed");
+		}
+		if(PetCare.isDisplayed())
+		{
+			System.out.println("pet care is displayed");
+		}
+		else
+		{
+			System.out.println("pet care is not displayed");
+		}
+		if(MeatsFrozenSeafood.isDisplayed())
+		{
+			System.out.println("Meats and frozen is displayed");
+		}
+		else
+		{
+			System.out.println("meats and frozen is not displayed");
+		}
+	}
+	
 }

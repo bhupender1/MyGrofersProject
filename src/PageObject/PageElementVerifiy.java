@@ -32,70 +32,71 @@ public class PageElementVerifiy {
 	WebElement HeaderLink;
 	@FindBy(xpath="//*[text()='Gurugram / Faridabad']")
 	WebElement LocationSelection;
+
 	
 	public void verify(WebElement element)
 	{
 		if(element.isDisplayed())
 		{
-			System.out.println("element is displayed");
+			System.out.println(element+" "+"element is Displayed");
 		}
 		else
 		{
-			System.out.println("element is not displayed");
+			System.out.println("element is not displayed"+element);
 		}
 	}
 	public void check()
 	{
 		verify(logo);
-//		if(logo.isDisplayed())
-//		{
-//			System.out.println(" Logo is visible");
-//		}
-//		else
-//		{
-//			System.out.println("Logo is not vivible");
-//		}
-//		if(Location.isDisplayed())
-//		{
-//			System.out.println("location is select");
-//			LocationSelection.click();
-//		}
-//		else
-//		{
-//			System.out.println("Location is not selected");
-//		}
-//		if(searchelement.isDisplayed())
-//		{
-//			System.out.println("elements are displayed");
-//		}
-//		else
-//		{
-//			System.out.println("elements are not displayed");
-//		}
-//		if(Login.isEnabled())
-//		{
-//			System.out.println("Login SIgnUp is Enabled");
-//		}
-//		else
-//		{
-//			System.out.println("Login Sign Up is not Enabled");
-//		}
-//		if(MyCart.isDisplayed())
-//		{
-//			System.out.println("My Cart displayed");
-//		}
-//		else
-//		{
-//			System.out.println("my cart is not displayed");
-//		}
-//		if(HeaderLink.isEnabled())
-//		{
-//			System.out.println("Link is enabled");
-//		}
-//		else
-//		{
-//			System.out.println("link is not enabled");
-//		}
+		if(logo.isDisplayed())
+		{
+			System.out.println(" Logo is visible");
+		}
+		else
+		{
+			System.out.println("Logo is not vivible");
+		}
+		if(Location.isDisplayed())
+		{
+			System.out.println("location is select");
+			LocationSelection.click();
+		}
+		else
+		{
+			System.out.println("Location is not selected");
+		}
+		if(searchelement.isDisplayed())
+		{
+			System.out.println("elements are displayed");
+		}
+		else
+		{
+			System.out.println("elements are not displayed");
+		}
+		if(Login.isEnabled())
+		{
+			System.out.println("Login SIgnUp is Enabled");
+		}
+		else
+		{
+			System.out.println("Login Sign Up is not Enabled");
+		}
+		if(MyCart.isDisplayed())
+		{
+			System.out.println("My Cart displayed");
+		}
+		else
+		{
+			System.out.println("my cart is not displayed");
+		}
+		if(HeaderLink.isEnabled())
+		{
+			System.out.println("Link is enabled");
+		}
+		else
+		{
+			System.out.println("link is not enabled");
+		}
 }
 
 	
