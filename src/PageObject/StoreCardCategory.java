@@ -95,6 +95,7 @@ public class StoreCardCategory {
 		}
 		if(HouseholdNeeds.isDisplayed())
 		{
+			System.out.println(HouseholdNeeds.getText());
 			System.out.println("House hold need is displayed");
 		}
 		else
@@ -104,6 +105,7 @@ public class StoreCardCategory {
 		//slider.click();
 		if(PersonalCare.isDisplayed())
 		{
+			System.out.println(PersonalCare.getText());
 			System.out.println("Personel care is displayed");
 		}
 		else
@@ -111,7 +113,7 @@ public class StoreCardCategory {
 			System.out.println("personel care is not displayed");
 		}
 		 
-           WebDriverWait wait=new WebDriverWait(driver, 1000);
+           WebDriverWait wait=new WebDriverWait(driver, 200);
            wait.until(ExpectedConditions.elementToBeClickable(slider));
 
        
@@ -119,18 +121,22 @@ public class StoreCardCategory {
 		
 		if(BreakfastAndDairy.isDisplayed())
 		{
+			System.out.println(BreakfastAndDairy.getText());
 			System.out.println("break fast and diary is displayed");
 		}
 		else
 		{
+			System.out.println(BreakfastAndDairy.getText());
 			System.out.println("break fast and diary is not displayed");
 		}
 		if(BiscuitsSnacks.isDisplayed())
 		{
+			System.out.println(BiscuitsSnacks.getText());
 			System.out.println("Biscuits and snacks is displayed");
 		}
 		else
 		{
+			System.out.println(BiscuitsSnacks.getText());
 			System.out.println("biscuts and snacks is not displayed");
 		}
 		//Thread.sleep(1000);
@@ -138,34 +144,42 @@ public class StoreCardCategory {
 		
 		if(NoodlesAndSauces.isDisplayed())
 		{
+			System.out.println(NoodlesAndSauces.getText());
 			System.out.println("noodles and snacks is displayed");
 		}
 		else
 		{
+			System.out.println(NoodlesAndSauces.getText());
 			System.out.println("noodles and snacks is not displayed");
 		}
 		if(BabyAndKids.isDisplayed())
 		{
+			System.out.println(BabyAndKids.getText());
 			System.out.println("baby and kids is displayed");
 		}
 		else
 		{
+			System.out.println(BabyAndKids.getText());
 			System.out.println("baby and kids is not displayed");
 		}
 		if(PetCare.isDisplayed())
 		{
+			System.out.println(PetCare.getText());
 			System.out.println("pet care is displayed");
 		}
 		else
 		{
+			System.out.println(PetCare.getText());
 			System.out.println("pet care is not displayed");
 		}
 		if(MeatsFrozenSeafood.isDisplayed())
 		{
+			System.out.println(MeatsFrozenSeafood.getText());
 			System.out.println("Meats and frozen is displayed");
 		}
 		else
 		{
+			System.out.println(MeatsFrozenSeafood.getText());
 			System.out.println("meats and frozen is not displayed");
 		}
 	}

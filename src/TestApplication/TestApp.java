@@ -28,10 +28,7 @@ public static void main(String[] args)  {
 	driver.manage().timeouts().implicitlyWait(Constant.ImplicitWait,TimeUnit.SECONDS );
 	App_Modular app=new App_Modular();
     app.Sign_In(driver);
-    Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)							
-			.withTimeout(30, TimeUnit.SECONDS) 			
-			.pollingEvery(5, TimeUnit.SECONDS) 			
-			.ignoring(NoSuchElementException.class);
+
 	    
    
 }
