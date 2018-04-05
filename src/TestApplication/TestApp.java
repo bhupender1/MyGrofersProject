@@ -26,6 +26,7 @@ public static void main(String[] args)  {
 	driver.get(Constant.URL);
 	//driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Constant.ImplicitWait,TimeUnit.SECONDS );
+	//driver.manage().window().maximize();
 	App_Modular app=new App_Modular();
     app.Sign_In(driver);
 
